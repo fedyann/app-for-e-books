@@ -175,12 +175,9 @@ body.active {
 }
 
 
-.content {
+.overlay {
   padding: 60px 0px 0px 0px;
 }
-
-
-
 
 
 
@@ -230,7 +227,6 @@ b {
 }
 
 
-
 .header__main__link {
   color: blue;
 }
@@ -262,3 +258,11 @@ model-viewer {
 .no {
   text-indent: 0ch;
 }
+
+
+footer {
+  margin-top: 30px;
+  background-color: #fff;
+  color:#fff;
+}
+
