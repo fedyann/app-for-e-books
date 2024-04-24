@@ -329,3 +329,17 @@ th {
 audio {
     margin-top: 20px;
 }
+
+.video {
+    margin-top: 50px;
+}
+.video h2 {
+    color: #795b94;
+}
+
+
+footer {
+    margin-top: 30px;
+    background-color: #fff;
+    color:#fff;
+}
