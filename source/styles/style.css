@@ -18,24 +18,48 @@ body {
     text-align: center;
 }
 
-.title img {
-    width: 60%;
-}
 
 .title h1 {
-    color: #006C70;
+    font-weight: 400;
+    color: #002CC1;
 }
 
 .title a {
-    text-align: center;
     display: inline-block;
+    text-align: center;
     text-decoration: none;
     padding: 15px;
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    background-color: #006C70;
+    background-color: #002CC1;
     color: aliceblue;
     border-radius: 10px;
     border: 0;
+}
+.title img {
+    width: 60%;
+}
+
+.content {
+    margin-top: 100px;
+    height: 400px;
+    vertical-align: middle;
+
+}
+.content img {
+    float: right;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.text {
+    display: inline;
+}
+.content p {
+    font-size: 24px;
+    width: 60%;
+    vertical-align: middle;
+    margin-left: 20px;
+    color:#002CC1
 }
