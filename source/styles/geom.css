@@ -82,6 +82,41 @@ body.active {
   display: block;
 }
 
+
+
+
+
+
+.search {
+  flex: 0 0 200px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.search input, button {
+  border: 0;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+.search button {
+  padding: 3px;
+  margin-top: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header__burger {
   display: block;
   position: relative;
@@ -265,4 +300,3 @@ footer {
   background-color: #fff;
   color:#fff;
 }
-
