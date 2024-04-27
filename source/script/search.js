@@ -28,7 +28,7 @@ var lastResFind=""; // последний удачный результат
     
      
       document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");//стираем предыдущие якори для скрола
-      document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:red'>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
+      document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:#ffee38'>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
       lastResFind=textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
       window.location = '#'+textToFind;//перемещаем скрол к последнему найденному совпадению
      }
