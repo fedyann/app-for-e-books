@@ -43,23 +43,24 @@ body {
 
 .content {
     margin-top: 100px;
-    height: 400px;
-    vertical-align: middle;
-
 }
 .content img {
     float: right;
-    height: 100%;
-    vertical-align: middle;
+    width: 30%;
+    height: 50%;
 }
 
 .text {
-    display: inline;
+    display: inline-block;
+    width: 60%;
 }
 .content p {
-    font-size: 24px;
-    width: 60%;
-    vertical-align: middle;
     margin-left: 20px;
+    font-size: 24px;
     color:#002CC1
+}
+
+footer {
+    color: aliceblue;
+    background-color: #002CC1;
 }
