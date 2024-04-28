@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/styles/geom.css">
+    <link rel="shortcut icon" href="source/img/logo2.png" type="image/png">
+    <title>Геометрия</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="books.html" class="header__btn">
+                        <img src="source/img/home.png" alt="">
+                    </a>
+                    <div class="search">
+                        <input type="text" id="text-to-find" value="">
+                        <button onclick="javascript: FindOnPage('text-to-find'); return false;">Искать</button>
+                        <button onclick="location.href='geometry.html'">Отмена</button>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li><a href="#start" class="header__link header__main__link">Введение</a>
+                                <ul class="header__ordered__list">
+                                    <li>
+                                        <a href="#first" class="header__link">1. Предмет стереометрии</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__link">2. Аксиомы стереометрии</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__link">3. Некоторые следствия из аксиом</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="" class="header__link header__main__link">Глава 1. Параллельность прямых и
+                                    плоскостей</a>
+                                <ul class="header__ordered__list">
+                                    <li>
+                                        <a href="" class="header__link">§ 1. Параллельность прямых, прямой и
+                                            плоскости</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__link">§ 2. Взаимное расположение прямых в
+                                            пространстве</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__link">§ 3. Параллельность плоскостей</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="overlay">
+        <div class="content">
+            <model-viewer class="cube"
+            src="https://cdn.glitch.global/b3c209ff-2ccf-41a3-af64-e9b937063e62/cube_licey34.glb?v=1713695773944"
+            ios-src="https://cdn.glitch.global/b3c209ff-2ccf-41a3-af64-e9b937063e62/Cube_Licey34.usdz?v=1713706558480"
+            poster="https://cdn.glitch.global/b3c209ff-2ccf-41a3-af64-e9b937063e62/image.png?v=1713695984287"
+            alt="A 3D model of a cube" shadow-intensity="1" camera-controls auto-rotate ar>
+            </model-viewer>
+        </div>
+    </div>
+    <footer>
+        <p>by fedyann</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="source/script/search.js"></script>
+    <script src="source/script/script.js"></script>
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+
+</html>
