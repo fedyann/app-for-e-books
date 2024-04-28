@@ -18,6 +18,11 @@
                     <a href="books.html" class="header__btn">
                         <img src="source/img/home.png" alt="">
                     </a>
+                    <div class="search">
+                        <input type="text" id="text-to-find" value="">
+                        <button onclick="javascript: FindOnPage('text-to-find'); return false;">Искать</button>
+                        <button onclick="location.href='geometry.html'">Отмена</button>
+                    </div>
                     <div class="header__burger">
                         <span></span>
                     </div>
@@ -200,9 +205,10 @@
             <h2>VIDEO WORKSHEETS</h2>
             <video width="400" height="300" controls="controls" poster="video/duel.jpg">
                 <source src="source/video/video-focus.mp3" type='video/mp3; codecs="theora, vorbis"'>
-                <source src="source/video/mp4-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="source/video/focus-mp4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="source/video/focus-webm.webm" type='video/webm; codecs="vp8, vorbis"'>
                 Тег video не поддерживается вашим браузером. 
-                <a href="source/video/mp4-video.mp4">Скачайте видео</a>.
+                <a href="source/video/focus-mp4.mp4">Скачайте видео</a>.
             </video>
             <p class="task">1. <span class="orange">SPEAKING</span></p>
             <p class="task"><b>Discuss the questions.</b></p>
@@ -228,6 +234,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="source/script/script.js"></script>
+    <script src="source/script/search.js"></script>
 </body>
 
 </html>
