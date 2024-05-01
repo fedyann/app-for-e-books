@@ -109,7 +109,15 @@ body.active {
 
 
 
-
+.color {
+  flex: 0 0 40px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  background-color: #ffee38;
+  height: 40px;
+  font-size: 24px;
+}
 
 
 
