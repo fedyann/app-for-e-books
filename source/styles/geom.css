@@ -259,16 +259,6 @@ b {
 
 
 
-::-moz-selection {
-  background-color: #ffee38;
-  color: #191919
-}
-
-::selection {
-  background-color: #ffee38;
-  color: #191919
-}
-
 
 .header__main__link {
   color: blue;
