@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/styles/geom.css">
+    <link rel="shortcut icon" href="source/img/logo2.png" type="image/png">
+    <title>Геометрия</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="books.html" class="header__btn">
+                        <img src="source/img/home.png" alt="" width="512" height="512">
+                    </a>
+                    <div class="search">
+                        <input type="text" id="text-to-find" value="">
+                        <button onclick="javascript: FindOnPage('text-to-find'); return false;">Искать</button>
+                        <button onclick="javascript: ClearSearch('text-to-find'); return false;">Отмена</button>
+                    </div>
+                    <button class="color" data-color="#ffee38">A</button>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li><a href="#start" class="header__link header__main__link">Введение</a>
+                                <ul class="header__ordered__list">
+                                    <li>
+                                        <a href="#first" class="header__link">1. Предмет стереометрии</a>
+                                    </li>
+                                    <li>
+                                        <span class="header__link header__link--disabled" aria-disabled="true" title="Раздел в разработке">2. Аксиомы стереометрии</span>
+                                    </li>
+                                    <li>
+                                        <span class="header__link header__link--disabled" aria-disabled="true" title="Раздел в разработке">3. Некоторые следствия из аксиом</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><span class="header__link header__main__link header__link--disabled" aria-disabled="true" title="Раздел в разработке">Глава 1. Параллельность прямых и
+                                    плоскостей</span>
+                                <ul class="header__ordered__list">
+                                    <li>
+                                        <span class="header__link header__link--disabled" aria-disabled="true" title="Раздел в разработке">§ 1. Параллельность прямых, прямой и
+                                            плоскости</span>
+                                    </li>
+                                    <li>
+                                        <span class="header__link header__link--disabled" aria-disabled="true" title="Раздел в разработке">§ 2. Взаимное расположение прямых в
+                                            пространстве</span>
+                                    </li>
+                                    <li>
+                                        <span class="header__link header__link--disabled" aria-disabled="true" title="Раздел в разработке">§ 3. Параллельность плоскостей</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="overlay">
+        <div class="content">
+            <h2 id="start">ВВЕДЕНИЕ</h2>
+            <h3 id="first">1. Предмет стереометрии</h3>
+            <p>Школьный курс геометрии состоит из
+                двух частей: планиметрии и стереометрии. В планиметрии изучаются свойства геометрических фигур на плоскости.
+                <b><a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D1%80%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F">Стереометрия</a> — это раздел геометрии, в котором изучаются свойства фигур в
+                    пространстве.</b> Слово «стереометрия» происходит от
+                греческих слов «стереос» — объёмный, пространственный и «метрео» — измерять.
+            </p>
+            <model-viewer class="cube"
+            src="source/models/cube.glb"
+            alt="3D-модель куба" shadow-intensity="1" camera-controls auto-rotate ar>
+            </model-viewer>
+            <p class="no">Простейшими и, можно сказать, основными фигурами в пространстве являются <b>точки</b>,
+                <b>прямые</b> и <b>плоскости</b>. Наряду с этими фигурами
+                мы будем рассматривать <b>геометрические тела</b> и
+                их <b>поверхности</b>. Представление о геометрических
+                телах дают окружающие нас предметы. Так, например, кристаллы имеют форму геометрических
+                тел, поверхности которых составлены из многоугольников. Такие поверхности называются <b>многогранниками</b>.
+                Одним из простейших многогранников является куб. Капли жидкости
+                в невесомости принимают форму геометрического
+                тела, называемого <b>шаром</b>. Такую же
+                форму имеет футбольный мяч. Консервная банка
+                имеет форму геометрического тела, называемого
+                <b>цилиндром</b>.
+            </p>
+
+            
+
+            <model-viewer class="sphere"
+                src="source/models/sphere.glb"
+                alt="3D-модель шара" shadow-intensity="0.5" camera-controls auto-rotate ar>
+            </model-viewer>
+
+            <p>В отличие от реальных предметов геометрические тела, как и всякие геометрические
+                фигуры , являются воображаемыми объектами.
+                Мы представляем геометрическое тело как часть
+                пространства, отделённую от остальной части пространства поверхностью — <b>границей</b> этого тела.
+                Так, например, граница шара есть <b>сфера</b>, а граница цилинд ра состоит из двух кругов — оснований
+                цилиндра и боковой поверхности.
+                Изучая свойства геометрических фигур — воображаемых объектов, мы получаем представление о геометрических
+                свойствах реальных предме тов (их форме, взаимном расположении
+                и т. д.) и можем использовать эти свойства в практической деятельности. В этом состоит практическое
+                (прикладное)
+                значение геометрии. Геометрия,
+                в частности стереометрия, широко используется
+                в строи тельном деле, архитектуре, машиностроении, геодезии, во многих других областях науки и техники.
+            </p>
+            <p>При изучении пространственных фигур,
+                в част ности геометрических тел, пользуются их
+                изображениями на чертеже. Как правило, изображением пространственной фигуры служит её проекция на ту или
+                иную
+                плоскость. Одна и та же
+                фи гура допускает различные изображения. Обычно выбирается то из них, которое создаёт правильное
+                представление о
+                форме фигуры и наиболее удобно для исследования её свойств. На рисун ках 2, а, б изображены два
+                многогранника —
+                <b>параллелепипед</b> и <b>пирамида</b>, а на рисунке 2, в —
+                <b>конус</b>. При этом невидимые части этих фигур
+                изображены штриховыми линиями. Правила изображения пространственных фигур приведены
+                в приложении 1.
+            </p>
+            <p>В течение двух лет мы будем изучать
+                взаимное расположение прямых и плоскостей,
+                многогранники, «круглые» геометрические тела —
+                цилиндр, конус, шар, рассмотрим вопрос об объё мах тел и познакомимся с векторами и методом
+                координат в пространстве.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>by fedyann</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="source/script/search.js"></script>
+    <script src="source/script/script.js"></script>
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Живой учебник — библиотека цифровых учебников со звуком, видео и 3D-моделями внутри текста.">
+    <link rel="stylesheet" href="source/styles/style.css">
+    <link rel="shortcut icon" href="source/img/logo2.png" type="image/png">
+    <title>Живой учебник — учебники будущего</title>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <a class="topbar-logo" href="#top">
+            <img src="source/img/main-logo.png" alt="" width="500" height="500">
+            Живой учебник
+        </a>
+        <a class="topbar-github" href="https://github.com/fedyann/app-for-e-books" target="_blank" rel="noopener" aria-label="Код проекта на GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+        </a>
+    </div>
+
+    <header class="hero" id="top">
+        <p class="hero-eyebrow">Учебники будущего</p>
+
+        <h1>Учебник, который можно <span class="accent-word">покрутить</span>, послушать и потрогать</h1>
+
+        <p class="hero-lede">Живой учебник — библиотека цифровых учебников для школы. Тексты, аудио, видео и
+            интерактивные задания собраны в одном месте — так, чтобы урок можно было не только прочитать, но и
+            прожить.</p>
+
+        <div class="hero-cta-row">
+            <a class="btn-primary" href="books.html">Открыть демоверсию</a>
+            <a class="btn-secondary" href="https://github.com/fedyann/app-for-e-books" target="_blank" rel="noopener">Код на GitHub</a>
+        </div>
+
+        <a class="hero-scroll-hint" href="#demo">
+            Смотреть дальше
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+            </svg>
+        </a>
+    </header>
+
+    <section class="demo" id="demo">
+        <div class="demo-card">
+            <div class="demo-viewer-wrap">
+                <model-viewer class="demo-model"
+                    src="source/models/sp-fixed.glb"
+                    camera-orbit="0deg 90deg 150%" camera-target="0m 0m 0m"
+                    alt="3D-модель sp-гибридизации атома углерода из главы по химии" shadow-intensity="1"
+                    camera-controls ar>
+                </model-viewer>
+            </div>
+            <div class="demo-text">
+                <span class="demo-badge">Живая 3D-модель</span>
+                <h2>Не просто картинка в учебнике</h2>
+                <p>Это настоящая 3D-модель молекулы из главы по химии — та же самая, что и в учебнике. Покрути её
+                    пальцем, приблизь колесом мыши или наведи камеру телефона через AR — и посмотри, как она стоит
+                    прямо у тебя на столе.</p>
+                <p class="demo-hint">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 12a9 9 0 0 1 15-6.7L21 8" />
+                        <path d="M21 3v5h-5" />
+                        <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
+                        <path d="M3 21v-5h5" />
+                    </svg>
+                    Работает прямо в браузере — жми и крути
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formats">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">Форматы</span>
+                <h2>Один урок — четыре способа его пройти</h2>
+                <p>Каждая демоверсия сочетает разные форматы подачи материала, чтобы под одну и ту же тему можно было
+                    подстроиться так, как удобно именно тебе.</p>
+            </div>
+            <div class="formats-grid">
+                <div class="format-card">
+                    <svg class="format-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M16 8 H42 L50 16 V56 H16 Z" />
+                        <path d="M42 8 V16 H50" />
+                        <path d="M22 26 H40" />
+                        <path d="M22 34 H44" />
+                        <path d="M22 42 H36" />
+                    </svg>
+                    <h3>Текст</h3>
+                    <p>Обычный текст учебника, но с подсветкой нужных мест и живым поиском по странице.</p>
+                </div>
+                <div class="format-card">
+                    <svg class="format-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 36 V30 C12 18 20 10 32 10 C44 10 52 18 52 30 V36" />
+                        <rect x="8" y="34" width="10" height="18" rx="4" />
+                        <rect x="46" y="34" width="10" height="18" rx="4" />
+                    </svg>
+                    <h3>Аудио</h3>
+                    <p>Отрывки для аудирования и произношения звучат прямо рядом с текстом, без сторонних приложений.
+                    </p>
+                </div>
+                <div class="format-card">
+                    <svg class="format-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="8" y="14" width="48" height="36" rx="8" />
+                        <path d="M27 24 L40 32 L27 40 Z" fill="currentColor" stroke="none" />
+                    </svg>
+                    <h3>Видео</h3>
+                    <p>Видеозадания по теме: посмотрел, обсудил вопросы, сверился с текстом.</p>
+                </div>
+                <div class="format-card">
+                    <svg class="format-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="12" y="12" width="40" height="40" rx="10" />
+                        <path d="M22 33 L29 40 L44 22" />
+                    </svg>
+                    <h3>Интерактив</h3>
+                    <p>Чекбоксы, поля для ответов и 3D-модели — задания, где можно не только читать, но и делать.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subjects">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">Предметы</span>
+                <h2>Уже есть три демоверсии</h2>
+            </div>
+            <div class="subjects-grid">
+                <a class="subject-book" href="english.html">
+                    <div class="subject-cover-wrap">
+                        <img class="subject-cover" src="source/img/focus.jpg"
+                            alt="Обложка учебника Focus 3 — английский язык" width="351" height="500" loading="lazy">
+                    </div>
+                    <span class="subject-name">Английский язык<span>Focus 3</span></span>
+                </a>
+                <a class="subject-book" href="geometry.html">
+                    <div class="subject-cover-wrap">
+                        <img class="subject-cover" src="source/img/geom.jpg"
+                            alt="Обложка учебника «Геометрия 10–11»" width="371" height="500" loading="lazy">
+                    </div>
+                    <span class="subject-name">Геометрия<span>10–11 класс</span></span>
+                </a>
+                <a class="subject-book" href="chemistry.html">
+                    <div class="subject-cover-wrap">
+                        <img class="subject-cover" src="source/img/chem.jpg" alt="Обложка учебника «Химия 10 класс»"
+                            width="594" height="772" loading="lazy">
+                    </div>
+                    <span class="subject-name">Химия<span>10 класс</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-feature">
+        <div class="search-feature-inner">
+            <span class="section-tag">Поиск</span>
+            <h2>Внутри — живой поиск по странице</h2>
+            <p>В каждом учебнике есть строка поиска: вводишь слово или фразу — все совпадения на странице
+                подсвечиваются, а страница сама долистывает до первого найденного места.</p>
+            <div class="search-mock" role="img" aria-label="Пример строки поиска с введённым словом «плоскости»">
+                <svg class="search-mock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M21 21l-4.3-4.3" />
+                </svg>
+                <span class="search-mock-text">плоскости</span>
+                <span class="search-mock-btn">Искать</span>
+            </div>
+            <p class="search-preview">«…простейшими фигурами в пространстве являются точки, прямые и <mark>плоскости</mark>…»</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <img class="footer-logo" src="source/img/main-logo.png" alt="Логотип «Живой учебник»" width="500" height="500">
+        <p class="footer-tagline">учебник, который растёт вместе с учеником</p>
+        <div class="footer-actions">
+            <a class="btn-primary" href="books.html">Открыть демоверсию</a>
+            <a class="btn-secondary footer-github" href="https://github.com/fedyann/app-for-e-books" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+                Код на GitHub
+            </a>
+        </div>
+        <p class="footer-credit">сделано fedyann</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+
+</html>

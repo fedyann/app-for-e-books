@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.selected {
+			border-radius: 3px;
+			-webkit-box-decoration-break: clone;
+		}
+		
+		::selection {
+			background: rgba(0, 0, 0, .25);
+		}
+
+	</style>
+	<script>
+
+		function styliString(color) {
+			const selection = getSelection();
+			const range = selection.getRangeAt(0);
+			const selectionContents = range.extractContents();
+			const span = document.createElement("span");
+			
+			for(const oldSpan of selectionContents.querySelectorAll(".selected")) {
+				for(const childNode of [...oldSpan.childNodes])
+					oldSpan.parentNode.insertBefore(childNode, oldSpan);
+				
+				oldSpan.remove();
+			}
+			
+			selectionContents.normalize();
+			span.classList.add("selected");
+			span.style.backgroundColor = color;
+			span.appendChild(selectionContents);
+			range.insertNode(span);
+		}
+		
+		document.addEventListener("click", ({ target }) => {
+			if(target.classList.contains("color")) {
+				styliString(target.dataset.color || target.textContent);
+			}
+		});
+	</script>
+</head>
+<body>
+	<button class="color" data-color="#f06">Pink</button>
+	<button class="color">Gold</button>
+	<button class="color" data-color="#002CC1">wegrgeqgr</button>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque si aut requietem natura non quaereret aut eam posset alia quadam ratione consequi. Hanc quoque iucunditatem, si vis, transfer in animum; <b>Quod autem ratione actum est, id officium appellamus.</b> Nec vero sum nescius esse utilitatem in historia, non modo voluptatem. An hoc usque quaque, aliter in vita? Quos quidem tibi studiose et diligenter tractandos magnopere censeo. Duo Reges: constructio interrete. Theophrasti igitur, inquit, tibi liber ille placet de beata vita? <i>Eademne, quae restincta siti?</i> Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. Potius ergo illa dicantur: turpe esse, viri non esse debilitari dolore, frangi, succumbere.</p>
+</body>
+</html>
